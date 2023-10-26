@@ -14,9 +14,11 @@ for (i in arr){
         let j=Math.floor(Math.random()*100)%3;
         cc=arr[j]
         console.log(decide(i,j));
+        return;
     }
 }}
 alert(`Enter a valid sign!`);
+turn();
 }
 
 
@@ -38,12 +40,14 @@ function game(){
     for (let i=0;i<5;i++){
         turn();
     }
-    if (p>c) {
-        p=0,c=0;    
+    if (p>c) {  
+        console.log(`final score-->you:${p}  sys:${c}`) 
+        p=0,c=0; 
         return "you won!"
     }
     else if (c>p) {
-        p=0,c=0;
+        console.log(`final score-->you:${p}  sys:${c}`)
+        p=0,c=0; 
         return "you lost:/"
     }
     else {
