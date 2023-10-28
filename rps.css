@@ -1,0 +1,33 @@
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    background-color: rgb(87, 45, 18);
+    max-width:700px;
+    border-radius: 7px;
+    text-align: center;
+    /*box-shadow: 5px 5px 0px white;*/
+}
+
+#btns>.btn{
+    width: 150px;
+    margin: 5px;
+    box-shadow: 3px 3px 0px grey;
+}
+
+#play{
+    box-shadow: 3px 3px 0px grey;
+}
+
+#scbr{
+    display: inline-block;
+    text-align: center;
+}
+
+#scbr>*{
+    margin:5px;
+}
+
